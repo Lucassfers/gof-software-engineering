@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 Os Padrões Comportamentais descrevem como classes e objetos interagem entre si. Esses padrões se concentram em como objetos interagem e distribuem responsabilidades de forma flexível e eficiente. Eles são usados para resolver problemas relacionados à comunicação, coordenação e controle de objetos.
 
 De forma resumida, os Padrões Comportamentais:
@@ -55,3 +56,6 @@ Por último, o padrão Memento trata do problema de capturar e restaurar o estad
 O Memento captura e restaura o estado interno de um objeto e permite salvar e restaurar o estado anterior de um objeto, sem revelar os detalhes de sua implementação. Um jogo de aventura pode usar o padrão para permitir que os jogadores salvem o estado do jogo para que possam retornar a um momento anterior a um determinado evento.
 
 Os padrões comportamentais dos Padrões GoF oferecem soluções elegantes para problemas de interação entre objetos, distribuição de responsabilidades e gerenciamento de estados. O Observer permite notificação eficiente de mudanças, o Command facilita a execução de ações parametrizadas, o Mediator promove a comunicação indireta e o Memento permite capturar e restaurar estados de objetos de forma segura. Ao compreender e aplicar esses padrões, os desenvolvedores podem criar sistemas mais flexíveis, extensíveis e de fácil manutenção, melhorando a qualidade e a robustez de seus aplicativos orientados a objetos.
+=======
+# gof-software-engineering
+>>>>>>> e8f1ffca96bacd425729cbae6356a264560e60b3
