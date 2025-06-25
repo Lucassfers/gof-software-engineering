@@ -1,3 +1,0 @@
-* PADRÃO COMMAND (GOF) - PADRÕES COMPORTAMENTAIS
-
-    O padrão command consiste em encapsular solicitações ou operações como objetos, o que lhe permiteparametrizar outros objetos com diferentes solicitações, enfileirar ou registrar solicitações e implementar recursos de cancelamento de operações. Incluindo informações como o nome do método, o objeto que o método pertence e os valores dos parâmetros do método
