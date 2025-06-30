@@ -1,4 +1,4 @@
-Padrão de Projeto: Strategy (Estratégia)
+# Padrão de Projeto: Strategy (Estratégia)
 O que é o padrão Strategy?
 O padrão Strategy é um padrão de projeto comportamental que permite definir uma família de algoritmos, encapsular cada um deles e torná-los intercambiáveis. Ele permite que o algoritmo varie independentemente dos clientes que o utilizam.
 
