@@ -9,15 +9,12 @@ export class AtualizacaoStrategy implements OperacaoMembroStrategy {
             console.log('\nNenhum membro cadastrado.');
             return;
         }
-        
         const matricula = Number(teclado('Digite a matrícula do membro: '));
         const membro = membros.find(m => m.matricula === matricula);
-        
         if (!membro) {
             console.log('\nMembro não encontrado.');
             return;
         }
-        
         console.log('\nSelecione o campo para atualizar:');
         console.log('1. Nome');
         console.log('2. CPF');

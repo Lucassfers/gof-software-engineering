@@ -21,7 +21,6 @@ Cada estratégia implementa a interface OperacaoMembroStrategy e pode ser trocad
 3. Classe Contexto (Membro)
 
 # Pontos Fortes e Fracos do Strategy
-
 # Pontos Fortes:
 - Troca de algoritmos em tempo de execução
 - Isolamento da implementação do código cliente
