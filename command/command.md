@@ -2,7 +2,7 @@
 O padrão Command é um padrão de projeto comportamental que transforma requisições (ações) em objetos. Ele encapsula uma solicitação como um objeto, permitindo que você parametrize clientes com diferentes comandos, armazene filas de comandos e suporte operações como desfazer/refazer.
 
 # Quando usar o Command
-- Sistemas onde as ações precisam ser Eeecutadas sob demanda;
+- Sistemas onde as ações precisam ser Executadas sob demanda;
 - Onde ações precisam ser registradas, desfeitas ou repetidas;
 - Onde ações são desacopladas do objeto que as executa;
 

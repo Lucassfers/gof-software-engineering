@@ -35,8 +35,6 @@ export default class Membro extends Pessoa{
         this._dividas = dividas;
     }
 
-    // Cadastro de Membros
-
     cadastrarMembro(): void {
         
         console.log()
@@ -61,8 +59,6 @@ export default class Membro extends Pessoa{
         console.log(`Dados do membro cadastrado: \n 
             ${NovoMembro.nome, NovoMembro.cpf, NovoMembro.dataNascimento, NovoMembro.endereco, NovoMembro.telefone, NovoMembro.matricula}`);
     }
-
-    // Listagem de membros
 
     listarMembros(): void {
         if (this.membros.length === 0) {
@@ -90,8 +86,6 @@ export default class Membro extends Pessoa{
             console.log("X", "=".repeat(133), "X");
         }
     }
-    
-    // Atualizar cadastro de membros
 
     atualizarMembro(): void {
         if (this.membros.length === 0) {
@@ -170,10 +164,8 @@ export default class Membro extends Pessoa{
         }
     }
 
-    // Salva os membros no txt usando o json
     salvarMembros(): void {
         try {
-            // Verifica se existem membros
             if (this.membros.length > 0) {
                 const membrosData = this.membros.map(membro => ({
                     matricula: membro.matricula || "",
@@ -195,8 +187,6 @@ export default class Membro extends Pessoa{
         }
     }
 
-    // carrega os membros no txt usando JSON
-
     carregarMembros(): void {
         try {
             if (fs.existsSync('membros.txt')) {
@@ -210,7 +200,7 @@ export default class Membro extends Pessoa{
                     dataNascimento: membro.dataNascimento || "",
                     endereco: membro.endereco || "",
                     telefone: membro.telefone || "",
-                    dividas: membro.dividas || [] // Deixa pendências vazias se não houver.
+                    dividas: membro.dividas || [] 
                 }));
     
                 console.log("Membros carregados com sucesso.");
@@ -220,7 +210,7 @@ export default class Membro extends Pessoa{
             }
         } catch (err) {
             console.error("Erro ao carregar os membros:", err);
-            this.membros = []; // Garante que o array seja inicializado mesmo em caso de erro
+            this.membros = [];
         }
     }
 }

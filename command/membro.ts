@@ -9,39 +9,27 @@ export default class Membro extends Pessoa {
   private _dividas: string[] = [];
 
   constructor(nome: string, matricula: number) {
-    // Inicializa a classe Pessoa com dados vazios
     super(nome, "", "", "", "");
     this._matricula = matricula;
   }
-
-  // Getters e setters adicionais
-
   get matricula(): number {
     return this._matricula;
   }
-
   set matricula(matricula: number) {
     this._matricula = matricula;
   }
-
   get membros(): Membro[] {
     return this._membros;
   }
-
   set membros(membros: Membro[]) {
     this._membros = membros;
   }
-
   get dividas(): string[] {
     return this._dividas;
   }
-
   set dividas(dividas: string[]) {
     this._dividas = dividas;
   }
-
-  // Método de cadastro de membros
-
   cadastrarMembro(): void {
     console.log();
     console.log(`======= Cadastro de Membros =======`);
@@ -53,16 +41,13 @@ export default class Membro extends Pessoa {
     const telefone = teclado(`Telefone: `);
     const cpf = teclado(`CPF: `);
     const matricula = Math.floor(Math.random() * 100000);
-
     const novo = new Membro(nomeNovo, matricula);
     novo.cpf = cpf;
     novo.dataNascimento = dataNasc;
     novo.endereco = endereco;
     novo.telefone = telefone;
     novo.dividas = [];
-
     this._membros.push(novo);
-
     console.log(`\n✅ Membro cadastrado com sucesso:\n`);
     console.log(`Nome: ${novo.nome}`);
     console.log(`CPF: ${novo.cpf}`);
@@ -71,7 +56,6 @@ export default class Membro extends Pessoa {
     console.log(`Telefone: ${novo.telefone}`);
     console.log(`Matrícula: ${novo.matricula}`);
   }
-
  atualizarMembro(): void {
     console.log();
     console.log(`======= Atualização de Membro =======`);
@@ -88,7 +72,6 @@ export default class Membro extends Pessoa {
     }
 
     const membro = this._membros[membroIndex];
-
     console.log(`\nDados atuais do membro:`);
     console.log(`Nome: ${membro.nome}`);
     console.log(`CPF: ${membro.cpf}`);
@@ -104,13 +87,11 @@ export default class Membro extends Pessoa {
     const novoEndereco = teclado(`Endereço [${membro.endereco}]: `) || membro.endereco;
     const novoTelefone = teclado(`Telefone [${membro.telefone}]: `) || membro.telefone;
     const novoCpf = teclado(`CPF [${membro.cpf}]: `) || membro.cpf;
-
     membro.nome = novoNome;
     membro.dataNascimento = novaDataNasc;
     membro.endereco = novoEndereco;
     membro.telefone = novoTelefone;
     membro.cpf = novoCpf;
-
     console.log(`\n Membro atualizado com sucesso!\n`);
     console.log(`Novos dados:`);
     console.log(`Nome: ${membro.nome}`);
