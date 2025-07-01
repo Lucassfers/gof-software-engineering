@@ -57,3 +57,5 @@ Frequência em Concursos: Observer, Command e Strategy são os campeões de ques
 Demanda no Mercado: Padrões como Observer e Strategy são amplamente usados em frameworks (ex: Angular, React) e sistemas distribuídos.
 Aplicabilidade Prática: Resolvem problemas reais de design (ex: undo/redo com Command, notificações com Observer).
 
+# Link da apresentação:
+https://www.mediafire.com/file/ce7kky94if7fri1/Apresentacao-GOF.7z/file
